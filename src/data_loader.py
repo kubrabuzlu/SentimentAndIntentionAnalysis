@@ -3,7 +3,7 @@ import json
 def get_config():
     # Read config
     config = configparser.ConfigParser()
-    config.read(r"C:\Users\kbuzlu\PycharmProjects\SentimentIntentionAnalysis\config\config.ini")
+    config.read(r"..\config\config.ini")
 
     # Get model_name
     model_name = config["model"]["name"]
