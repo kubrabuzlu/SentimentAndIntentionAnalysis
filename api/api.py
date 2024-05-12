@@ -1,14 +1,19 @@
 import configparser
 
 from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from SentimentAndIntentionAnalysis import ZeroShotClassifier
 from data_loader import *
 
 # Initialize FastAPI app
 app = FastAPI()
-
-# Get model_name, data_path and labels_path
+app.add_middleware(CORSMiddleware,
+                   allow_origins=["http://localhost:8501"],
+                   allow_credentials=True,
+                   allow_methods=["*"],
+                   allow_headers=["*"],)
+#Get model_name, data_path and labels_path
 model_name, data_path, labels_path = get_config()
 
 # Load sentiment labels and intention labels
@@ -20,13 +25,16 @@ class AnalysisResult(BaseModel):
     sentiment: str
     intention: str
 
+class Text(BaseModel):
+    text: str
 
 @app.post("/analyze/")
-def analyze_text(text: str):
-    result = analyzer.analyze_text(text)
+def analyze_text(data: Text):
+    result = analyzer.analyze_text(data.text)
     return AnalysisResult(sentiment=result["sentiment"], intention=result["intention"])
 
 if __name__ == "__main__":
     import uvicorn
     uvicorn.run("api:app", host="0.0.0.0", port=8000, reload=True)
+
 
