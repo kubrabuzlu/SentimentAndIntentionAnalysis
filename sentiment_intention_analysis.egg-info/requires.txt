@@ -1,0 +1,5 @@
+configparser
+transformers
+fastapi
+uvicorn
+pydantic
