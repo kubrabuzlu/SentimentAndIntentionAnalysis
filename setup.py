@@ -1,19 +1,23 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="sentiment-intention-analysis",
-    version="0.1",
+    name='sentiment_intention_analysis',
+    version='0.1',
     packages=find_packages(),
+    include_package_data=True,
     install_requires=[
-        "configparser",
-        "transformers",
-        "fastapi",
-        "uvicorn",
-        "pydantic"
+        'transformers',
+        'torch',
+        'configparser',
+        'json'
     ],
     entry_points={
         'console_scripts': [
-            'sentiment-intention-analysis=SentimentIntentionAnalysis.src.api:app'
-        ]
-    }
+            'sentiment_intention_analysis=your_module_name_here.main:main',
+        ],
+    },
+    author='Kubra Buzlu',
+    author_email='kubraa.buzlu@email.com',
+    description='Sentiment and Intention Analysis Package',
+    url='https://github.com/kubrabuzlu/SentimentAndIntentionAnalysis',
 )

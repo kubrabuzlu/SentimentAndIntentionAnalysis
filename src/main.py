@@ -1,9 +1,8 @@
 from SentimentAndIntentionAnalysis import ZeroShotClassifier
-from data_loader import *
+from data_loader import get_config, load_labels, load_data
+import json
 
-print("Sentiment Analysis and Intention Analysis Project")
-
-if __name__ == "__main__":
+def main():
     # Get path and potential labels path config.ini
     model_name, data_path, labels_path = get_config()
     sentiment_labels, intention_labels = load_labels(labels_path)
@@ -31,3 +30,6 @@ if __name__ == "__main__":
         json.dump(results, json_file, indent=4)
 
     print("Results saved to 'results.json' file.")
+
+if __name__ == "__main__":
+    main()
