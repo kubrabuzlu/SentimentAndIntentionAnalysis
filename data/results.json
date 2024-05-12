@@ -1,0 +1,102 @@
+[
+    {
+        "sentence": "Hello! Thank you for reaching out to our customer service. How can I assist you today?",
+        "sentiment": "Positive",
+        "intention": "Help"
+    },
+    {
+        "sentence": "Hi! I'm interested in purchasing the new iPhone 14.",
+        "sentiment": "Positive",
+        "intention": "Purchase"
+    },
+    {
+        "sentence": "That's fantastic to hear! The iPhone 14 is a great choice. Which specific model are you considering?",
+        "sentiment": "Positive",
+        "intention": "Help"
+    },
+    {
+        "sentence": "I'm looking at the iPhone 14 Pro Max with the highest storage capacity.",
+        "sentiment": "Positive",
+        "intention": "Help"
+    },
+    {
+        "sentence": "Excellent choice! Would you like to buy it outright or explore our payment plan options?",
+        "sentiment": "Positive",
+        "intention": "Payment"
+    },
+    {
+        "sentence": "I'd like to explore the payment plan options, please.",
+        "sentiment": "Positive",
+        "intention": "Payment"
+    },
+    {
+        "sentence": "Of course. We offer several flexible payment plans. Could you please provide your information so I can assist you further?",
+        "sentiment": "Positive",
+        "intention": "Help"
+    },
+    {
+        "sentence": "Sure, I'm ready.",
+        "sentiment": "Positive",
+        "intention": "Approve"
+    },
+    {
+        "sentence": "Firstly, may I have your full name and email address?",
+        "sentiment": "Positive",
+        "intention": "Inquire"
+    },
+    {
+        "sentence": "My name is John Doe and my email address is johndoe@example.com.",
+        "sentiment": "Positive",
+        "intention": "Inquire"
+    },
+    {
+        "sentence": "Thank you, John. Now, would you prefer a 12-month or 24-month payment plan?",
+        "sentiment": "Positive",
+        "intention": "Payment"
+    },
+    {
+        "sentence": "I think a 24-month plan would be more manageable for me.",
+        "sentiment": "Positive",
+        "intention": "Inform"
+    },
+    {
+        "sentence": "Understood. Do you have any devices you'd like to trade in towards your purchase?",
+        "sentiment": "Positive",
+        "intention": "Inform"
+    },
+    {
+        "sentence": "Yes, I have an iPhone 12 Pro that I'd like to trade in.",
+        "sentiment": "Positive",
+        "intention": "Trade In"
+    },
+    {
+        "sentence": "I see. Let me check our current offers and see if we have any promotions that would benefit you.",
+        "sentiment": "Positive",
+        "intention": "Inform"
+    },
+    {
+        "sentence": "Based on the condition of your iPhone 12 Pro, I'm sorry to say that we can't offer much for a trade-in value.",
+        "sentiment": "Negative",
+        "intention": "Trade In"
+    },
+    {
+        "sentence": "That's disappointing to hear.",
+        "sentiment": "Negative",
+        "intention": "Complaint"
+    },
+    {
+        "sentence": "I understand your frustration. Is there anything else I can assist you with?",
+        "sentiment": "Neutral",
+        "intention": "Help"
+    },
+    {
+        "sentence": "No, that's all for now. Thank you!",
+        "sentiment": "Negative",
+        "intention": "Approve"
+    },
+    {
+        "sentence": "You're welcome! If you have any further questions, feel free to reach out to us anytime. Have a great day!",
+        "sentiment": "Positive",
+        "intention": "Inquire"
+    }
+]
