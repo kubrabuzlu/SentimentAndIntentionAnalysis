@@ -1,0 +1,4 @@
+{
+  "sentiment_labels": ["Positive", "Negative", "Neutral"],
+  "intention_labels": ["Inquire", "Inform", "Payment", "Price", "Trade In", "Discount", "Complaint", "Approve", "Selling", "Confusion", "Change Package", "Upgrade", "Purchase", "Help"]
+}
