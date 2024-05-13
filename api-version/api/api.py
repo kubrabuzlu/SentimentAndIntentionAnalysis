@@ -3,8 +3,8 @@ import configparser
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
-from SentimentAndIntentionAnalysis import ZeroShotClassifier
-from data_loader import *
+from src.SentimentAndIntentionAnalysis import ZeroShotClassifier
+from src.data_loader import *
 
 # Initialize FastAPI app
 app = FastAPI()
@@ -35,6 +35,6 @@ def analyze_text(data: Text):
 
 if __name__ == "__main__":
     import uvicorn
-    uvicorn.run("api:app", host="0.0.0.0", port=8000, reload=True)
+    uvicorn.run("api-version:app", host="0.0.0.0", port=8000, reload=True)
 
 
