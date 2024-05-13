@@ -1,2 +1,0 @@
-[console_scripts]
-sentiment-intention-analysis = SentimentIntentionAnalysis.src.api:app

@@ -1,8 +1,0 @@
-README.md
-setup.py
-sentiment_intention_analysis.egg-info/PKG-INFO
-sentiment_intention_analysis.egg-info/SOURCES.txt
-sentiment_intention_analysis.egg-info/dependency_links.txt
-sentiment_intention_analysis.egg-info/entry_points.txt
-sentiment_intention_analysis.egg-info/requires.txt
-sentiment_intention_analysis.egg-info/top_level.txt
