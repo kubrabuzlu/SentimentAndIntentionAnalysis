@@ -18,20 +18,6 @@ class ZeroShotClassifier:
         return classifier
 
     def analyze_text(self, text):
-        # Sentiment analysis
-        # sentiment_result = self.model(text, self.sentiment_labels)
-        # sentiment = sentiment_result["labels"][0]
-        #
-        # # Intention analysis
-        # intention_result = self.model(text, self.intention_labels)
-        # intention = intention_result["labels"][0]
-
-        # results = self.model(text, self.labels)
-        # for label in results:
-        #
-        #
-        # return {"sentiment": sentiment, "intention": intention}
-
         results = list(self.model(text, self.labels)['labels'])
         i = 0
         sentiment = None
