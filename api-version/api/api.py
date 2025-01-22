@@ -7,7 +7,7 @@ from SentimentAndIntentionAnalysis import ZeroShotClassifier
 # Initialize FastAPI app
 app = FastAPI()
 
-# Create Analzer
+# Create Analyzer
 analyzer = ZeroShotClassifier(model_name='facebook/bart-large-mnli')
 
 class AnalysisResult(BaseModel):
