@@ -1,5 +1,6 @@
 from transformers import pipeline, BartTokenizer, BartForSequenceClassification
 
+
 class ZeroShotClassifier:
 
     def __init__(self, model_name):
@@ -8,6 +9,7 @@ class ZeroShotClassifier:
         self.sentiment_labels = ["Positive", "Negative", "Neutral"]
         self.intention_labels = ["Inquire", "Inform", "Payment", "Price", "Trade In", "Discount", "Complaint",
                                  "Approve", "Selling", "Confusion", "Change Package", "Upgrade", "Purchase", "Help"]
+        self.labels = self.sentiment_labels + self.intention_labels
 
     def create_model(self, model_name):
         # Create Model
