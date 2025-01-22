@@ -24,8 +24,10 @@ class ZeroShotClassifier:
         intention = None
         while (sentiment is None) or (intention is None):
             if results[i] in self.sentiment_labels:
+                # Sentiment analyze result
                 sentiment = results[i]
             if results[i] in self.intention_labels:
+                # Intention analyze result
                 intention = results[i]
             i += 1
         return {"sentiment": sentiment, "intention": intention}
